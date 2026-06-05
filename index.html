@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quizzes: Take Online Quiz - ProProfs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="Style/style.css">
+</head>
+<body>
+    <!-- Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light sticky-top border-bottom">
+        <div class="container-fluid">
+            <!-- Left Icon (Brand) -->
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-home fs-5"></i>
+            </a>
+
+            <!-- Right Section (Answer Quiz, Create Quiz, More Menu) -->
+            <div class="ms-auto d-flex align-items-center gap-3">
+                <!-- Answer Quiz Dropdown -->
+                <div class="dropdown">
+                    <button class="btn btn-outline-primary btn-sm dropdown-toggle" type="button" id="answerQuizDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        Answer Quiz
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="answerQuizDropdown">
+                        <li><a class="dropdown-item" href="#">Browse All Quizzes</a></li>
+                        <li><a class="dropdown-item" href="#">My Assigned Quizzes</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Recently Taken</a></li>
+                    </ul>
+                </div>
+
+                <!-- Create Quiz Button -->
+                <button class="btn btn-primary btn-sm" type="button">Create Quiz</button>
+
+                <!-- More Menu (Icon Dropdown) -->
+                <div class="dropdown">
+                    <button class="btn btn-link p-0" type="button" id="moreDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="Public/Images/more.png" alt="Menu" style="width: 24px; height: 24px;">
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="moreDropdown">
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <div class="container mt-5">
+        <p>Your content goes here...</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
