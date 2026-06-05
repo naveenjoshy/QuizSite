@@ -2,3 +2,13 @@ body{
     margin-right: 0px;
     margin-left: 0px;
 }
+#heading-text{
+    color:rgb(2, 61, 129)
+}
+#heading-span{
+    color:rgb(84, 196, 234)
+}
+#header-sub{
+    margin-left:80px;
+    color:rgb(2, 61, 129)
+}
