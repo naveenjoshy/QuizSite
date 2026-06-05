@@ -39,16 +39,36 @@ body{
         gap: 0.25rem;
     }
 }
-#multi-col-dropdown{
-    width:350px;
-    left:-120px;
-    top:0px;
-    background-color: rgb(194, 194, 197);
-    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+.multi-col-dropdown-menu {
+    left: 50% !important;
+    transform: translateX(-50%);
 }
 
+#multi-col-dropdown{
+    width:400px;
+    margin: 0 auto;
+    border: 1px;
+    border-radius: 30px;
+}
 .dropdown-header{
     color:rgb(203, 135, 135);
     font-size: 16px;
     font-weight: bolder;
+}
+.dropdown-item:hover{
+    color:rgb(255, 255, 255);
+    background-color: rgb(7, 7, 7);
+    border-radius: 20px;
+}
+#hero-text-area{
+    width:auto;
+    margin:0;
+    display:inline-block;
+}
+#hero-text{
+    color:coral;
+}
+#hero-img{
+    width:50px;
+    height:50px;
 }
