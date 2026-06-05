@@ -60,6 +60,9 @@ body{
     background-color: rgb(7, 7, 7);
     border-radius: 20px;
 }
+.hero-text{
+    margin-top:40px;
+}
 #hero-text-area{
     width:auto;
     margin:0;
@@ -71,4 +74,13 @@ body{
 #hero-img{
     width:50px;
     height:50px;
+}
+.search-quiz{
+    margin-left:30%;
+    width:600px;
+    border-color: black;
+    border-radius: 40px;
+    background: url('https://cdn-icons-png.flaticon.com/512/622/622669.png') no-repeat right 10px center;
+    background-size: 16px;
+    padding-right: 35px;
 }
