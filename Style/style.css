@@ -10,12 +10,14 @@ body{
     color:rgb(84, 196, 234)
 }
 #header-sub{
+    width:100%;
+    height:100%;
     margin-left:80px;
-    margin-top:-10px;
+    padding-top:0px;
     color:rgb(2, 61, 129)
 }
 
-/* Responsive adjustments: reduce brand size and hide subtext on small screens */
+/* Responsive adjustments: reduce brand size and show subtext below on small screens */
 @media (max-width: 576px) {
     #heading-text {
         font-size: 1.2rem;
@@ -26,11 +28,14 @@ body{
         font-size: 1.2rem;
     }
     #header-sub {
-        display: none;
+        margin-left: 0;
+        margin-top: 0;
+        font-size: 0.85rem;
     }
     .navbar-brand {
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        align-items: flex-start;
         gap: 0.25rem;
     }
 }
