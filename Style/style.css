@@ -2,6 +2,7 @@ body{
     margin-right: 0px;
     margin-left: 0px;
 }
+
 #heading-text{
     color:rgb(2, 61, 129)
 }
@@ -10,5 +11,39 @@ body{
 }
 #header-sub{
     margin-left:80px;
+    margin-top:-10px;
     color:rgb(2, 61, 129)
+}
+
+/* Responsive adjustments: reduce brand size and hide subtext on small screens */
+@media (max-width: 576px) {
+    #heading-text {
+        font-size: 1.2rem;
+        margin: 0;
+        line-height: 1;
+    }
+    #heading-span {
+        font-size: 1.2rem;
+    }
+    #header-sub {
+        display: none;
+    }
+    .navbar-brand {
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+    }
+}
+#multi-col-dropdown{
+    width:350px;
+    left:-120px;
+    top:0px;
+    background-color: rgb(194, 194, 197);
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+}
+
+.dropdown-header{
+    color:rgb(203, 135, 135);
+    font-size: 16px;
+    font-weight: bolder;
 }
