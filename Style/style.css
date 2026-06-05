@@ -67,6 +67,8 @@ body{
     width:auto;
     margin:0;
     display:inline-block;
+    font-size: 2rem;
+    line-height: 1.1;
 }
 #hero-text{
     color:coral;
@@ -75,12 +77,40 @@ body{
     width:50px;
     height:50px;
 }
-.search-quiz{
-    margin-left:30%;
-    width:600px;
-    border-color: black;
-    border-radius: 40px;
-    background: url('https://cdn-icons-png.flaticon.com/512/622/622669.png') no-repeat right 10px center;
-    background-size: 16px;
-    padding-right: 35px;
+
+/* Responsive hero adjustments */
+@media (max-width: 992px) {
+    #hero-text-area { font-size: 1.6rem; }
+    #hero-img { width:45px; height:45px; }
 }
+@media (max-width: 768px) {
+    .hero-text { flex-wrap: wrap; }
+    #hero-text-area { font-size: 1.25rem; text-align: center; width: 100%; }
+    #hero-img { width:40px; height:40px; margin-top: 0.25rem; }
+}
+@media (max-width: 420px) {
+    #hero-text-area { font-size: 1.05rem; }
+    #hero-img { width:36px; height:36px; }
+}
+.search-bar {
+    padding-top: 30px;
+    max-width: 500px;
+    margin: auto auto;
+}
+
+.search-bar .input-group {
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar .form-control {
+    border: none;
+    padding-left: 20px;
+}
+
+.search-bar .btn {
+    border: none;
+    padding: 10px 20px;
+}
+
