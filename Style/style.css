@@ -50,7 +50,7 @@ body{
 #multi-col-dropdown{
     width:400px;
     margin: 0 auto;
-    border: 1px;
+    border: 1px solid #ccc;
     border-radius: 30px;
 }
 .dropdown-header{
@@ -106,6 +106,7 @@ body{
     margin-top:3rem;
     display:flex;
     max-width:100px;
+    margin-bottom:40px;
 }
 .showcase-img{
     width:70px;
@@ -146,31 +147,57 @@ body{
     .showcase-sub-text{font-size:.9rem;}
     .second-hero-text { font-size: .75rem;}
 }
-.menu-section{
-    align-items: left;
+.menu-section .sub-menu li{
+    align-items: center;
     margin-left: auto;
+    margin-top: 40px;
+    display: flex;
+
 }
 .menu-item{
     text-decoration: none;
     margin-left: auto;
-    align-items: center;
     text-align:center;
     color:black;
     margin-top: 2%;
-    margin-right: 10px;
+    margin-right: 1px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.menu-item:hover{
+    color:rgb(10, 2, 2);
+    transform: scale(1.1);
 }
 
 .sub-menu{
     display:flex;
-}
-.sub-menu{
     list-style:none;
 }
 .sub-menu-image{
     width:25px; 
+    margin-right: 10%;
 }
-.menu-item:hover{
-    color:rgb(10, 2, 2);
-    transform: scale(1.2);
-    transition: smooth;
+.quiz-sub-heading li{
+    display: inline-block;
+    margin: 2px 1px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.quiz-sub-heading li a{
+    text-decoration: none;
+    color: #111;
+    display: inline-block;
+    padding: 0.35rem 0.65rem;
+    border: 1px solid #3e6af9;
+    border-radius: 30px;
+    background-color: #ffffff;
+    white-space: nowrap;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+}
+
+.quiz-sub-heading li a:hover{
+    background-color: #02407f;
+    color: #ffffff;
+    border-color: #ae3ef9;
+    transform: translateY(-2px);
 }
