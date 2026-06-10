@@ -153,6 +153,7 @@ body{
 .menu-item{
     text-decoration: none;
     margin-left: auto;
+    align-items: center;
     text-align:center;
     color:black;
     margin-top: 2%;
