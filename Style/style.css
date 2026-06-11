@@ -20,6 +20,11 @@ body{
     color:rgb(2, 61, 129)
 }
 
+.hidden{
+    display:none !important;
+}
+
+
 /* Responsive adjustments: reduce brand size and show subtext below on small screens */
 @media (max-width: 576px) {
     #heading-text {
@@ -137,7 +142,7 @@ body{
     .showcase-title{font-size:1.0rem;font-weight:bold;}
     .showcase-sub-text{font-size:.9rem;}
     .second-hero-text { font-size: .95rem;}
-    .quiz-sub-heading{display:none;}
+    .section-quiz{height:4vh;}
 }
 @media (max-width: 480px) {
     #hero-text-area { font-size: 1.05rem; }

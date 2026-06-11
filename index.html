@@ -129,13 +129,13 @@
 </div>
 <div class="menu-section container-fluid col-12 col-lg-10 col-md-10 col-sm-10">
             <ul class="sub-menu">
-                <li><a href="#" class="menu-item"><img src="Public/Images/book.png" alt="Image" class="sub-menu-image">Quiz</a></li>
-                <li><a href="#" class="menu-item"><img src="Public/Images/trophy.png" alt="Image" class="sub-menu-image">Trivia</a></li>
-                <li><a href="#" class="menu-item"><img src="Public/Images/graduation-hat.png" alt="Image" class="sub-menu-image">Lesson</a></li>
+                <li><button type="button" class="menu-item btn btn-link text-decoration-none bg-transparent border-0 p-2 d-inline-flex align-items-center fs-5" onclick="showSection('sec1')"><img src="Public/Images/book.png" alt="Image" class="sub-menu-image me-2">Quiz</button></li>
+                <li><button type="button" class="menu-item btn btn-link text-decoration-none bg-transparent border-0 p-2 d-inline-flex align-items-center fs-5" onclick="showSection('sec2')"><img src="Public/Images/trophy.png" alt="Image" class="sub-menu-image me-2">Trivia</button></li>
+                <li><button type="button" class="menu-item btn btn-link text-decoration-none bg-transparent border-0 p-2 d-inline-flex align-items-center fs-5" onclick="showSection('sec3')"><img src="Public/Images/graduation-hat.png" alt="Image" class="sub-menu-image me-2">Lesson</button></li>
             </ul>
             <hr>
 </div>
-<section class="section-quiz container-fluid col-12 col-lg-10 col-md-10 col-lg-10">
+<section class="section-quiz container-fluid col-12 col-lg-10 col-md-10 col-lg-10" id="sec1">
     <div class="quiz-container container-fluid">
         <ul class="quiz-sub-heading">
             <li><a href="#">Football</a></li>
@@ -197,10 +197,25 @@
         </ul>
     </div>
 </section>
+<section class="section-quiz container-fluid col-12 col-lg-10 col-md-10 col-lg-10 section-content hidden" id="sec2">
+    <div class="quiz-container container-fluid">
+        <ul class="quiz-sub-heading">
+            <h1>Section 2 Quiz</h1>
+        </ul>
+    </div>
+</section>
+<section class="section-quiz container-fluid col-12 col-lg-10 col-md-10 col-lg-10 section-content hidden" id="sec3">
+    <div class="quiz-container container-fluid">
+        <ul class="quiz-sub-heading">
+            <h1>Section 3 Quiz</h1>
+        </ul>
+    </div>
+</section>
 
 
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
