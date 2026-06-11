@@ -137,6 +137,7 @@ body{
     .showcase-title{font-size:1.0rem;font-weight:bold;}
     .showcase-sub-text{font-size:.9rem;}
     .second-hero-text { font-size: .95rem;}
+    .quiz-sub-heading{display:none;}
 }
 @media (max-width: 480px) {
     #hero-text-area { font-size: 1.05rem; }
@@ -201,5 +202,5 @@ body{
     background-color: #02407f;
     color: #ffffff;
     border-color: #ae3ef9;
-    transform: translateY(-2px);
+    transform: translate(-2px);
 }
