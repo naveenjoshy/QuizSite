@@ -19,7 +19,6 @@ body{
     padding-top:0px;
     color:rgb(2, 61, 129)
 }
-
 .hidden{
     display:none !important;
 }
@@ -245,4 +244,38 @@ body{
     height:90%;
     border-radius: 20px;
     margin-bottom: 25px;
+}
+.footer{
+    background-color: #000000;
+    padding-top:20px;
+    bottom: 0;
+    left:0;
+    padding-left:70px;
+    padding-right:70px;
+}
+.footer-sections{
+    margin-left:20px;
+}
+.footer-headings{
+    color:aliceblue;
+    margin-bottom: 20px;
+    font-size:1.3rem;
+}
+.footer-links{
+    font-size:.8rem;
+    margin-left:-30px;
+}   
+.footer-links li{
+    list-style-type: none;
+    padding: 5px;
+}
+.footer-links a{
+    text-decoration:none;
+    color:#ccc
+}
+.footer-links a:hover{
+    color:#5b97f0;  
+}
+.footer-button{
+    border-radius:20px;
 }
