@@ -9,6 +9,4 @@ function showSection(activeId) {
         }
     });
 }
-
-// Expose for inline onclick handlers in index.html
 window.showSection = showSection;
