@@ -247,14 +247,6 @@ a{
     border-radius: 20px;
     margin-bottom: 25px;
 }
-.footer{
-    background-color: #000000;
-    padding-top:20px;
-    bottom: 0;
-    left:0;
-    padding-left:70px;
-    padding-right:70px;
-}
 .hr-line{
     width:100%;
     height:3;
@@ -262,113 +254,182 @@ a{
     margin-top:20px;
     margin-bottom:10px;
 }
-.footer-sections{
-    margin-left:20px;
+/* --- Base Footer Styles --- */
+.footer {
+    background-color: #000000;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    /* Replaced rigid 70px padding with responsive container margins */
+    padding-left: 15px;
+    padding-right: 15px;
 }
-.footer-headings{
-    color:aliceblue;
-    margin-bottom: 20px;
-    font-size:1.3rem;
+
+/* --- Typography & Headings --- */
+.footer-headings {
+    color: aliceblue;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    font-weight: 600;
 }
-.footer-links{
-    font-size:.8rem;
-    margin-left:-30px;
-}   
-.footer-links li{
+
+/* --- Section 1: Main Link Columns --- */
+.footer-links {
+    font-size: 0.8rem;
+    padding-left: 0; /* Reset browser default bullet spacing safely */
+    margin-left: 0;  /* Removed negative margins that cause layout breaks */
     list-style-type: none;
-    padding: 5px;
-}
-.footer-links a{
-    text-decoration:none;
-    color:#ccc;
-}
-.footer-links a:hover{
-    color:#5b97f0;  
-}
-.footer-button{
-    border-radius:20px;
-    width: 100%;
-    text-wrap: nowrap;
-    font-size: auto;
-}
-.footer-section-2{
-    display: inline;
-}
-.footer-section-2 ul{
-    list-style-type:none;
-}
-.footer-section-2 li{
-    padding-left:5px;
-    display:inline;
-    width:fit-content;
-    padding-right:10px;
-    border-right: 1px solid white;
-}
-.footer-section-2 a{
-    color:#ccc;
-    font-size:.8rem;
-}
-.footer-section-2 a:hover{
-    color:#82a3ce;  
-}
-#footer-all-solution-link{
-    color:#ccc;
-    padding-top:4px;
-    padding-left:10px;
-    text-decoration: solid;
+}   
+
+.footer-links li {
+    padding: 4px 0;
 }
 
+.footer-links a {
+    text-decoration: none;
+    color: #ccc;
+    transition: color 0.2s ease;
+}
 
+.footer-links a:hover {
+    color: #5b97f0;  
+}
 
+/* Call to Action Button */
+.footer-button {
+    border-radius: 20px;
+    width: auto;
+    max-width: 100%;
+    white-space: nowrap;
+    padding: 8px 20px;
+}
 
-.footer-section-3{
+/* --- Section 2: Solutions Mid-Bar --- */
+.footer-section-2 {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    gap: 1rem;
     flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
 }
-.footer-section-3 ul{
-    list-style-type:none;
-}
-.footer-section-3 li{
-    padding-left:5px;
-    display:inline;
-    width:fit-content;
-    padding-right:10px;
-}
-.footer-section-3 a{
-    color:#ccc;
-    font-size:.8rem;
-}
-.footer-section-3 a:hover{
-    color:#82a3ce;  
-}
-.footer-left{
-    flex: 1 1 auto;
-}
-.footer-last-section{
-    display: grid;
-    padding-bottom:15px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-}
-.footer-right{
+
+.footer-section-2 ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
     display: flex;
-    justify-content: flex-end;
-    margin-left: auto;
+    flex-wrap: wrap; /* Allows links to drop to next line cleanly on mobile */
 }
-.social-images img{
-    width:24px;
-    height:24px;
-    margin:10px;
+
+.footer-section-2 li {
+    padding-left: 0;
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
 }
-.social-images img:hover{
-    filter:brightness(75%);
+
+/* Remove the border from the very last link item */
+.footer-section-2 li:last-child {
+    border-right: none;
 }
-.social-images ul{
-    list-style-type:none;
+
+.footer-section-2 a {
+    color: #ccc;
+    font-size: 0.8rem;
+    text-decoration: none;
 }
-.social{
-    display:inline;
+
+.footer-section-2 a:hover {
+    color: #82a3ce;  
+}
+
+#footer-all-solution-link {
+    color: #ccc;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+/* --- Section 3: Bottom Legal & Social Links --- */
+.footer-section-3 {
+    display: flex;
+    flex-direction: column; /* Stack vertically on mobile */
+    align-items: center;
+    text-center: center;
+    width: 100%;
+    gap: 1.5rem;
+}
+
+.footer-left, .footer-right {
+    width: 100%;
+}
+
+/* Replaced rigid 5-column grid with a flexible wrap grid */
+.footer-last-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+}
+
+.footer-last-section a {
+    color: #ccc;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+.footer-last-section a:hover {
+    color: #82a3ce;  
+}
+
+/* Social Icon Layout */
+.social-images {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+}
+
+.social-images img {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+    transition: filter 0.2s ease;
+}
+
+.social-images img:hover {
+    filter: brightness(75%);
+}
+
+.hr-line {
+    border-color: rgba(255, 255, 255, 0.1);
+    margin: 20px 0;
+}
+
+/* --- Desktop Layout Adaptations (992px and up) --- */
+@media (min-width: 992px) {
+    .footer {
+        padding-left: 70px;  /* Restore your preferred wider padding on big screens */
+        padding-right: 70px;
+    }
+    
+    .footer-section-3 {
+        flex-direction: row; /* Switch back to side-by-side rows */
+        justify-content: space-between;
+    }
+    
+    .footer-left {
+        width: auto;
+    }
+    
+    .footer-last-section {
+        justify-content: flex-start;
+        gap: 20px;
+    }
+    
+    .footer-right {
+        width: auto;
+        justify-content: flex-end;
+    }
 }
